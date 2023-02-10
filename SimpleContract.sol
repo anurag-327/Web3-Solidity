@@ -24,6 +24,7 @@ contract SimpleStorage{        //contract is akeyword just like class
         // }
 
         // view- just to read data (no modification), pure-you cannot read data also   -- these do not consume gas unless called inside a function that consts gas
+        //bcoz they donot change state of the blockchain
         function getFavNumber() public view returns(uint256){   // declaring public doesit automatically
             return FavNumber;
         }
